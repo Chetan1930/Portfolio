@@ -31,6 +31,7 @@ body {
   list-style: none;
   display: flex;
   gap: 1rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-links a {
@@ -42,6 +43,42 @@ body {
 
 .nav-links a:hover {
   color: #ffeb3b;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive Design for Tablets and Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #455a64;
+    width: 100%;
+    transform: translateX(100%);
+    padding: 1rem 0;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.show {
+    transform: translateX(0);
+  }
+
+  .nav-links a {
+    text-align: center;
+    font-size: 1rem;
+  }
 }
 
 /* Header Section */
