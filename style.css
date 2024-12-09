@@ -287,6 +287,7 @@ header {
 /* Grid Layouts for Skills, Projects, Certificates, and Hobbies */
 .skills-grid,
 .project-grid,
+.course-grid,
 .certificates,
 .hobbies,
 .profiles {
@@ -298,9 +299,18 @@ header {
   background: linear-gradient(to right, #e0eafc, #cfdef3);
 }
 
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* background-color: #455a64; */
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
 /* Card Styling for All Sections */
 .skill-card,
 .project-card,
+.course-card,
 .certificate-card,
 .hobby-card,
 .profile-card {
@@ -316,6 +326,7 @@ header {
 
 .skill-card:hover,
 .project-card:hover,
+.course-card:hover,
 .certificate-card:hover,
 .hobby-card:hover,
 .profile-card:hover {
