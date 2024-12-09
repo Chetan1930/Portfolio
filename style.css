@@ -50,13 +50,31 @@ body {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
+  position: absolute; /* Fixed to the top-left corner */
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
 }
 
-/* Responsive Design for Tablets and Mobile */
+/* Scroll Down Button */
+.scroll-down {
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+  text-align: center;
+  cursor: pointer;
+}
+
+.scroll-down i {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
+
+
 
   .nav-links {
     flex-direction: column;
