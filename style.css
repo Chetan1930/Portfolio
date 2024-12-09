@@ -1,0 +1,275 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: #333;
+  background: linear-gradient(to right, #455a64, #cfdef3);
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: white;
+  /* background: #2e7d32; */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffeb3b;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: linear-gradient(to right, #455a64, #607d8b);
+  color: white;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #ffeb3b;
+    margin-bottom: 0.5rem;
+    object-fit: cover; /* Ensures proper focus on the face */
+    object-position: center top; /* Adjusts to prioritize face */
+  }
+  
+
+.tagline {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.social-links {
+  margin: 1rem 0;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: white;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #ffeb3b;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  background: #ffeb3b;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffc107;
+}
+
+/* Scroll Indicator */
+.scroll-down {
+  margin-top: 2rem;
+  animation: bounce 2s infinite;
+  text-align: center;
+}
+
+.scroll-down p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.scroll-down i {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* General Section Styling */
+.section {
+  padding: 2rem;
+  background: white;
+  margin: 2rem 0;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+/* Grid Layouts for Skills, Projects, Certificates, and Hobbies */
+.skills-grid,
+.project-grid,
+.certificates,
+.hobbies,
+.profiles {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+/* Card Styling for All Sections */
+.skill-card,
+.project-card,
+.certificate-card,
+.hobby-card,
+.profile-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  flex: 1;
+  max-width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.certificate-card:hover,
+.hobby-card:hover,
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Links */
+.project-card h3 a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.project-card h3 a:hover {
+  color: #ff9800;
+}
+
+/* Profile Section Styling */
+.profiles h2 {
+  color: #455a64;
+}
+
+.profile-card h3 {
+  font-size: 1.5rem;
+  color: #455a64;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.profile-card a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.profile-card a:hover {
+  color: #ff9800;
+}
+
+/* Separator Styling for Section Visibility */
+.section:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+/* Shared Hover Effects */
+.card:hover a {
+  color: #ff9800;
+}
+
+.certificate-card a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.certificate-card a:hover {
+  color: #ff9800;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #607d8b;
+  color: white;
+  padding: 1rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #ffeb3b;
+  font-weight: bold;
+  transition: color 0.3s;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.contact-link:hover {
+  color: #ff9800;
+}

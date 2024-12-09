@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header class="contact-header">
+        <h1>Contact Me</h1>
+        <p>Feel free to reach out through the form below or using the provided contact details!</p>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="a26873cb-8425-41ee-b687-fe6000b3c0ba">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><i class="fas fa-phone-alt"></i> +91-8708377165</p>
+                <p><i class="fas fa-envelope"></i> <a
+                        href="mailto:chetanchauhan1930@gmail.com">chetanchauhan1930@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Sonipat, Haryana, India</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/chetan71/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Chetan1930" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.codechef.com/users/chetan_71" target="_blank"><i class="fas fa-code"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Chetan Chauhan. All Rights Reserved.</p>
+        <p><a href="contact.html" class="contact-link">Contact Me</a></p>
+    </footer>
+
+</body>
+
+</html>
